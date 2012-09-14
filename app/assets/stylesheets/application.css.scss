@@ -12,6 +12,21 @@
  *= require bootstrap
  */
 
+@font-face {
+    font-family: 'PFDinDisplayPro';
+    src: asset-url('PFDinDisplayPro-Reg.ttf', font) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.body {
+	font-family: PFDinDisplayPro;
+	
+}
+
+
 .slaider {
 	background: url(slaider.png) no-repeat;
 	height: 339px;
