@@ -7,6 +7,12 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 
+gem 'capistrano'
+gem 'unicorn'
+gem 'execjs'
+gem 'therubyracer'
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,3 +42,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :production do 
+gem 'mysql2'
+end
+
