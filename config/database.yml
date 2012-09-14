@@ -21,6 +21,6 @@ test:
 production:
   adapter: mysql2
   host: mysql2.locum.ru
-  database: babrovka_imsat28
-  username: babrovka_imsat28
-  password: QB4my1r1
+  database: babrovka_imsat70
+  username: babrovka_imsat70
+  password: Cr6f2mqQ
