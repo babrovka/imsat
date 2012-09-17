@@ -4,23 +4,42 @@
 		<div class ="row">
 <div class="span2"><%= image_tag("logo.png") %></div>
 <div class="span2 top"><%= link_to "О компании", root_path, class:"toplink" %></div>
-<div class="span2 top"><%= link_to "Решения", root_path, class:"toplink" %></div>
+<div class="span2 top"><%= link_to "Решения", reshenia_path, class:"toplink" %></div>
 <div class="span2 top"><%= link_to "Продукция", root_path, class:"toplink" %></div>
 <div class="span2 top"><%= link_to "Поддержка", root_path, class:"toplink" %></div>
-<div class="span2 top"><%= link_to "Контакты", root_path, class:"toplink" %></div>
+<div class="span2 top"><%= link_to "Контакты", contact_path, class:"toplink" %></div>
 	</div>
 	</div>
 	
 	<div class="span12 slaider">Слайдер</div>
 	
-<div class="span3 lefttext"><p>Сегодня наша компания работаетнад более тесной интеграциейс системами МПЦ и ДЦ, ставя основной целью наращивание функциональных возможностей современных систем автоматикии телемеханики</p></div>
-<div class="span9 maintext"><p>Сегодня наша компания работаетнад более тесной интеграциейс системами МПЦ и ДЦ, ставя основной целью наращивание функциональных возможностей современных систем автоматикии телемеханики</p><p>Сегодня наша компания работаетнад более тесной интеграциейс системами МПЦ и ДЦ, ставя основной целью наращивание функциональных возможностей современных систем автоматикии телемеханики</p><p>Сегодня наша компания работаетнад более тесной интеграциейс системами МПЦ и ДЦ, ставя основной целью наращивание функциональных возможностей современных систем автоматикии телемеханики</p></div>
+<div class="span4 lefttext"><p>Сегодня наша компания работаетнад более тесной интеграциейс системами МПЦ и ДЦ, ставя основной целью наращивание функциональных возможностей современных систем автоматикии телемеханики</p></div>
+<div class="span8 maintext">
+	<h3>Продукция</h3>
+	<%= link_to "Концентратор линейного пункта", root_path %></br>
+	<%= link_to "Программируемый индустриальный контроллер сигнальной точки ПИК-СТ", root_path %></br>
+	<%= link_to "Программируемый индустриальный контроллер сигнальной точки ПИК-СТ", root_path %></br>
+	<%= link_to "Программируемый индустриальный контроллер сигнальной точки ПИК-СТ", root_path %></br>
+	<%= link_to "Программируемый индустриальный контроллер сигнальной точки ПИК-СТ", root_path %></br>
+	<%= link_to "Программируемый индустриальный контроллер сигнальной точки ПИК-СТ", root_path %></br>
+	<%= link_to "Программируемый индустриальный контроллер сигнальной точки ПИК-СТ", root_path %></br>
+	<%= link_to "Программируемый индустриальный контроллер сигнальной точки ПИК-СТ", root_path %></br>
+</div>
 
 <div class="span12 categories">
 	<div class ="row">	
-		<div class="span4 blue"><div class="centerheader">Каталог продукции</div></div>
-		<div class="span4 green"><div class="centerheader">Каталог продукции</div></div>
-		<div class="span4 orange"><div class="centerheader">Каталог продукции</div></div>
+		<div class="span4 blue">
+			<div class="centerheader">Каталог продукции</div>
+			<div class="centerlink bl"><%= link_to "Скачать", root_path %></div>
+		</div>
+		<div class="span4 green">
+			<div class="centerheader">Специализированные индикаторы</div>
+			<div class="centerlink gr"><%= link_to "Перейти в раздел", root_path %></div>
+		</div>
+		<div class="span4 orange">
+			<div class="centerheader">Система АПК-ДК</div>
+			<div class="centerlink or"><%= link_to "Перейти в раздел", root_path %></div>
+		</div>
 	</div>
 </div>
 	
@@ -28,11 +47,14 @@
 	
 	<div class="span12 footer">	
 		<div class="row">
-<div class="span2">Copyright</div>
-<div class="span2">О компании</div>
-<div class="span2">Продукция</div>
-<div class="span2">Контакты</div>
-<div class="span4">Поиск</div>
+			<div class="span2">Copyright</br>Все права защищены</div>
+			<div class="span2">О компании</br>Проекты</div>
+			<div class="span2">Продукция</br>Услуги</div>
+			<div class="span2">Контакты</br>Обратная связь</div>
+			<div class="span4">
+				<input type="text" placeholder="Поиск по сайту">
+				<button type="submit" class="btn">Найти</button>
+			</div>
 		</div>
 	<div>
 </div>

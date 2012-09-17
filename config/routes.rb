@@ -4,6 +4,9 @@ Imsat::Application.routes.draw do
   
     root to: 'static_pages#home'
 
+    match '/reshenia',   to: 'static_pages#reshenia'
+    match '/contact',   to: 'static_pages#contact'
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
