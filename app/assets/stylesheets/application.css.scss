@@ -23,7 +23,7 @@
 
 .body {
 	font-family: PFDinDisplayPro;
-	color: gray;
+	color: #646464;
 
 }
 
@@ -32,8 +32,17 @@
 	margin-bottom: 40px;
 }
 
+.logo {
+	float: left;
+	width: 160px;
+	margin-left: 40px;
+	margin-right: 50px;
+}
+
 .top {
-	padding-top: 20px;
+	float: left;
+	width: 142px;
+	padding-top: 30px;
 	
 }
 
@@ -75,6 +84,7 @@
 }
 
 .lefttext {
+	color: #646464;
 }
 
 .leftcontact {
@@ -117,12 +127,12 @@
 	}
 
 	a {
-		color: grey;
+		color: #3d82cc;
 		text-decoration: none;
 	}
 
 	a:hover {
-		border-bottom: 1px dotted grey;	
+		border-bottom: 1px dotted #3d82cc;	
 	}
 }
 
@@ -190,6 +200,7 @@
 
 
 .footer {
+	color: #77777f;
 	margin-top: 120px;
 	border-top: solid 2px grey;
 	padding-top: 30px;
