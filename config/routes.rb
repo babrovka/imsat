@@ -1,4 +1,6 @@
 Imsat::Application.routes.draw do
+  get "slides/slider"
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
