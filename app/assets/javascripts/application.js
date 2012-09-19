@@ -14,23 +14,22 @@
 //= require jquery_ujs
 //= require_tree .
 
-// Делает пункт меню активным
-$(function(){
-function stripTrailingSlash(str) {
-if(str.substr(-1) == '/') {
-    return str.substr(0, str.length - 1);
-}
-return str;
- }
 
- var url = window.location.pathname;  
-var activePage = stripTrailingSlash(url);
 
- $('#toplink').each(function(){  
-var currentPage = stripTrailingSlash($(this).attr('href'));
 
-if (activePage == currentPage) {
-$(this).parent().addClass('active'); 
-} 
-});
-})
+		// Слайдер
+	$(function() {
+		$("#slider ul").carouFredSel({
+    		circular: true,
+    		infinite: false,
+    		auto    : false,
+    		scroll  : {
+        		items   : 1
+    		},
+    	
+    		pagination  : {
+        		container : "#paging"	
+        	}
+		});
+	});
+		// Слайдер

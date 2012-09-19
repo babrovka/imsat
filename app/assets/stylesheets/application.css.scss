@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require bootstrap
+ *= require slider
  */
 
 @font-face {
@@ -69,13 +70,6 @@
 .toplink:hover {
 	color: white;
 	background: url(hover.png) 0% 50% no-repeat;
-}
-
-
-
-.slaider {
-	background: url(slaider.png) no-repeat;
-	height: 339px;
 }
 
 .home {

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'PfdindisplayproLight';
+    src: url('../webfonts/pfdindisplaypro-light.eot');
+    src: url('../webfonts/pfdindisplaypro-light.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/pfdindisplaypro-light.woff') format('woff'),
+         url('../webfonts/pfdindisplaypro-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PfdindisplayproMed';
+    src: url('../webfonts/pfdindisplaypro-med.eot');
+    src: url('../webfonts/pfdindisplaypro-med.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/pfdindisplaypro-med.woff') format('woff'),
+         url('../webfonts/pfdindisplaypro-med.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'EtelkaLightProRegular';
+    src: url('../webfonts/etelkalightpro-webfont.eot');
+    src: url('../webfonts/etelkalightpro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/etelkalightpro-webfont.woff') format('woff'),
+         url('../webfonts/etelkalightpro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PFDinDisplayPro';
+    src: asset-url('PFDinDisplayPro-Reg.ttf', font) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,a,abbr,em,b,strong,dl,dt,dd,ol,ul,li,form,label,table,tbody,tfoot,thead,tr,th,td {margin: 0;padding: 0;}
+* {font-family: Tahoma, Arial, Verdana, sans-serif; font-size: 100.01%; outline: none;}
+
+table {border-collapse:collapse;}
+a img {border:none}
+ul, ol {list-style:none}
+
+.slider ul li .s-text .st-title {font-family: PfdindisplayproMed, Tahoma, Arial, Verdana, sans-serif;}
+.slider ul li .s-text * {font-family: PfdindisplayproLight, Tahoma, Arial, Verdana, sans-serif;}
+
+.slider {
+	height: 339px;
+	margin: 50px auto 0;
+	overflow: hidden;
+	position: relative;
+	width: 940px
+}
+
+.slider ul li {
+	float: left;
+	height: 339px;
+	overflow: hidden;
+	position: relative;
+	width: 940px
+}
+
+.slider ul li img {display: block;}
+
+.slider ul li .s-text {
+	background: url(black-opacity.png);
+	color: #fff;
+	font-size: 16px;
+	height: 339px;
+	overflow: hidden;
+	padding: 30px 20px;
+	position: absolute;
+	left: 0; top: 0;
+	width: 300px;
+}
+
+.slider ul li .s-text p {padding-bottom: 15px;}
+
+.slider ul li .s-text .st-title {
+	color: #ffa100;
+	display: block;
+	font-size: 20px;
+}
+
+.slider ul li .s-text a {color: #fff;}
+.slider ul li .s-text a:hover {text-decoration: none;}
+
+.slider .slider-paging {
+	height: 8px;
+	overflow: hidden;
+	position: absolute;
+	left: 18px; bottom: 10px;
+}
+
+.slider .slider-paging a {
+	background: url(slider-paging.png) no-repeat;
+	float: left;
+	width: 8px;
+	height: 8px;
+	overflow: hidden;
+	margin: 0 12px 0 0;
+	display: block;
+}
+
+.slider .slider-paging a.selected {background-position: 0 -8px; cursor: default;}
+.slider .slider-paging a span {display: none;}
