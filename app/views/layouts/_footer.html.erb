@@ -3,10 +3,14 @@
 		<div class="span2">Copyright</br>Все права защищены</div>
 		<div class="span2">О компании</br>Проекты</div>
 		<div class="span2">Продукция</br>Услуги</div>
-		<div class="span2">Контакты</br>Обратная связь</div>
+		<div class="span2"><%= link_to "Контакты", contact_path %></br>
+			<%= mail_to "info@imsat.ru", "Обратная связь" %></div>
 		<div class="span4">
 			<input type="text" placeholder="Поиск по сайту">
 			<button type="submit" class="btn">Найти</button>
 		</div>
 	</div>
 <div>
+	
+	
+	
