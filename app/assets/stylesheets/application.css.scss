@@ -154,6 +154,10 @@
 
 .maintext {
 
+	p {
+		padding-bottom: 4px;
+	}
+
 	h3 {
 		margin-bottom: 10px;
 	}
@@ -164,12 +168,30 @@
 	}
 
 	a:hover {
-		border-bottom: 1px dotted #3d82cc;	
+		text-decoration: underline;
 	}
 }
 
 .categories {
 	margin-top: 60px;
+}
+
+.categories a {
+			width: 168px;
+			height: 47px;
+			margin: auto;
+			margin-left: 66px;
+			padding-top: 15px;
+			text-align: center;
+			display: block;
+			float: left;
+			color: white;
+			text-decoration: none;
+}
+
+.categories a:hover {
+	text-decoration: underline;
+
 }
 
 .blue {
@@ -198,37 +220,41 @@
 	font-size: 14pt;
 }
 
-.centerlink {
-	width: 168px;
-	height: 47px;
-	margin: auto;
-	margin-left: 66px;
-	padding-top: 10px;
-	text-align: center;
-	display: block;
-	float: left;
 
-	a {
-		color: white;
-		text-decoration: none;
-	}
-
-	a:hover {
-		border-bottom: 1px dotted white;	
-	}
+.centerlinkbl a {
+			padding-left: 10px;
+			background: url(blue_link.png) no-repeat;	
+			
 }
 
-.bl {
-		background: url(blue_link.png) no-repeat;		
-	}
+.centerlinkbl a:hover {
+			
+			background: url(blue_link_hover.png) no-repeat;	
+			}
 
-.gr {
-		background: url(green_link.png) no-repeat;		
-	}
+.centerlinkgr a {
 
-.or {
-		background: url(orange_link.png) no-repeat;		
-	}
+			background: url(green_link.png) no-repeat;	
+			
+}
+
+.centerlinkgr a:hover {
+
+			background: url(green_link_hover.png) no-repeat;	
+			}
+			
+.centerlinkor a {
+
+			background: url(orange_link.png) no-repeat;	
+			
+}
+
+.centerlinkor a:hover {
+
+			background: url(orange_link_hover.png) no-repeat;	
+			}
+
+
 
 
 .footer {

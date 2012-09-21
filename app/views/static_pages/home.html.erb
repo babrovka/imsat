@@ -8,7 +8,7 @@
 <div class="span8 maintext">
 	<h3>Продукция</h3>
 		<% Product.all.each do |product| %>
-			<%= link_to product.name, product %></br>
+			<p><%= link_to product.name, product %></p>
 		<% end %>
 </div>
 
@@ -16,15 +16,15 @@
 	<div class ="row">	
 		<div class="span4 blue">
 			<div class="centerheader">Каталог продукции</div>
-			<div class="centerlink bl"><%= link_to "Скачать", root_path %></div>
+			<div class="centerlinkbl"><%= link_to "Скачать", root_path %></div>
 		</div>
 		<div class="span4 green">
 			<div class="centerheader">Специализированные индикаторы</div>
-			<div class="centerlink gr"><%= link_to "Перейти в раздел", root_path %></div>
+			<div class="centerlinkgr"><%= link_to "Перейти в раздел", root_path %></div>
 		</div>
 		<div class="span4 orange">
 			<div class="centerheader">Система АПК-ДК</div>
-			<div class="centerlink or"><%= link_to "Перейти в раздел", root_path %></div>
+			<div class="centerlinkor"><%= link_to "Перейти в раздел", root_path %></div>
 		</div>
 	</div>
 </div>
