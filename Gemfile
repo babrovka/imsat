@@ -8,6 +8,7 @@ gem 'rails', '3.2.8'
 gem 'sqlite3'
 
 gem 'paperclip'
+gem "ckeditor"
 gem 'capistrano'
 gem 'unicorn'
 gem 'execjs'

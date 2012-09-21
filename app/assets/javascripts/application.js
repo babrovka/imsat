@@ -14,22 +14,49 @@
 //= require jquery_ujs
 //= require_tree .
 
+//= require ckeditor/ckeditor
+//= require ckeditor/init
+
 
 
 
 		// Слайдер
-	$(function() {
-		$("#slider ul").carouFredSel({
-    		circular: true,
-    		infinite: false,
-    		auto    : false,
-    		scroll  : {
-        		items   : 1
-    		},
-    	
-    		pagination  : {
-        		container : "#paging"	
-        	}
+		$(function() {
+			$("#slider ul").carouFredSel({
+	    		circular: true,
+	    		infinite: false,
+	    		auto 	: true,
+	    		scroll  : {
+	        		items   : 1
+	    		},
+	    	
+	    		pagination  : {
+	        		container : "#paging"	
+	        	}
+			});
 		});
-	});
 		// Слайдер
+		
+		
+			// Актив	
+			$(function(){
+			function stripTrailingSlash(str) {
+			if(str.substr(-1) == '/') {
+			    return str.substr(0, str.length - 1);
+			}
+			return str;
+			 }
+
+			 var url = window.location.pathname;  
+			var activePage = stripTrailingSlash(url);
+
+			 $('.lefttext a').each(function(){  
+			var currentPage = stripTrailingSlash($(this).attr('href'));
+
+			if (activePage == currentPage) {
+			$(this).parent().addClass('active'); 
+			} 
+			});
+			})
+		
+		//  Актив

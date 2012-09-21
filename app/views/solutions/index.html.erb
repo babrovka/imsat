@@ -1,0 +1,21 @@
+<div class="row">
+	<%= render 'layouts/header' %>
+	<%= render 'layouts/slider' %>
+	<div class="span4 lefttext">
+		<h3>ИМСАТ: Решения</h3>
+			<ul class="solutions-list">
+			  <% @solutions.each do |solution| %>
+			    <li><%= link_to solution.name, solution %></li> 
+			<% end %>
+
+			</ul>		
+	</div>
+	
+	<div class="span8 maintext">
+		<h3><%= @solution.name %></h3>
+			<p><%= sanitize @solution.description %></p>	
+	</div>
+
+	
+	<%= render 'layouts/footer' %>
+</div>

@@ -1,16 +1,22 @@
 Imsat::Application.routes.draw do
-  get "slides/slider"
+  mount Ckeditor::Engine => '/ckeditor'
+
+  get "products/index"
+
+  get "products/show"
 
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
+  resources :solutions
+  resources :products
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
     root to: 'static_pages#home'
-
-    match '/reshenia',   to: 'static_pages#reshenia'
+    match '/support',   to: 'static_pages#support'
     match '/contact',   to: 'static_pages#contact'
 
   # Sample of regular route:
