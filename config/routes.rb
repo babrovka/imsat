@@ -18,6 +18,7 @@ Imsat::Application.routes.draw do
     root to: 'static_pages#home'
     match '/support',   to: 'static_pages#support'
     match '/contact',   to: 'static_pages#contact'
+    match '/about',   to: 'static_pages#about'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
