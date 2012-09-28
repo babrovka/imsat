@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.all
-    @product = Product.last
+    @product = Product.first
   end
 
   def show

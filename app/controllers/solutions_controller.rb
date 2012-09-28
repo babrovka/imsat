@@ -1,7 +1,7 @@
 class SolutionsController < ApplicationController
   def index
     @solutions = Solution.all
-    @solution = Solution.last
+    @solution = Solution.first
   end
 
   def show

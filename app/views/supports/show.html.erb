@@ -1,0 +1,21 @@
+<div class="row">
+	<%= render 'layouts/header' %>
+	<%= render 'layouts/slider' %>
+	<div class="span4 lefttext">
+		<h3>ИМСАТ: Поддержка</h3>
+			<ul class="solutions-list">
+			  <% @supports.each do |support| %>
+			    <li><%= link_to support.name, support %></li> 
+			<% end %>
+
+			</ul>		
+	</div>
+	
+	<div class="span8 maintext">
+		<h3><%= @support.name %></h3>
+			<p><%= sanitize @support.description %></p>	
+	</div>
+
+	
+	<%= render 'layouts/footer' %>
+</div>
