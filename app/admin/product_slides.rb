@@ -1,5 +1,4 @@
 ActiveAdmin.register ProductSlide do
-  menu :label => proc{ I18n.t("product") }
          index do 
           column :id
           column :title
