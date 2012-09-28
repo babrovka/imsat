@@ -1,0 +1,19 @@
+<div class="span12">
+<div id="slider" class="slider">
+	<ul>
+		<% Solution_slide.all.each do |slide| %>
+		<li>
+			<%= image_tag(slide.logo, :size => "940x339") %>
+			
+			<div class="s-text">
+				<span class="st-title"><%= slide.title %></span>
+				<p><%= slide.note %></p>
+				<a href="<%= slide.link %>">Читать подробнее</a>
+			</div>
+		</li>
+		<% end %>
+	</ul>
+		
+	<div id="paging" class="slider-paging"></div>
+</div>
+</div>
