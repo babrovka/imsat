@@ -1,8 +1,12 @@
 production:
   solr:
-    hostname: localhost
+    hostname: mysql2.locum.ru
     port: 8983
     log_level: WARNING
+    database: babrovka_imsat70
+    username: babrovka_imsat70
+    password: Cr6f2mqQ
+    
 
 development:
   solr:
@@ -15,3 +19,4 @@ test:
     hostname: localhost
     port: 8981
     log_level: WARNING
+    
