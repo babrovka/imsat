@@ -46,8 +46,6 @@ set :application,     "imsat"
 # Сервер размещения проекта.
 set :deploy_server,   "neon.locum.ru"
 
-sunspot:solr:run
-end
 
 # Не включать в поставку разработческие инструменты и пакеты тестирования.
 set :bundle_without,  [:development, :test]
