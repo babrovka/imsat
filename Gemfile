@@ -21,9 +21,8 @@ gem 'activeadmin'
 
 gem 'sunspot_rails'
 
-group :development do
-   gem 'sunspot_solr'
- end
+gem 'sunspot_solr'
+
 
 
 # Gems used only for assets and not required
