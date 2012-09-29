@@ -20,8 +20,8 @@ gem 'therubyracer'
 gem 'activeadmin'
 
 gem 'sunspot_rails'
-
 gem 'sunspot_solr'
+
 
 
 

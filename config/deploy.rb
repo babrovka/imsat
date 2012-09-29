@@ -6,11 +6,6 @@
 # gem 'capistrano'
 # gem 'unicorn'
 #
-
-gem 'sunspot_rails'
-gem 'sunspot_solr'
-
-
 # в ваш Gemfile.
 #
 # Если вы используете другую систему управления зависимостями,
