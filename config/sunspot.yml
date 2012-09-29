@@ -1,6 +1,7 @@
 production:
   solr:
     hostname: mysql2.locum.ru
+    port: 3309
     log_level: WARNING
     database: babrovka_imsat70
     username: babrovka_imsat70
