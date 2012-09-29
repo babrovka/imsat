@@ -1,4 +1,5 @@
 ActiveAdmin.register Product do
+    config.sort_order = 'sn_asc'
   
    index do
     column :id

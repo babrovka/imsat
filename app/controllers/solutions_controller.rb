@@ -1,11 +1,11 @@
 class SolutionsController < ApplicationController
   def index
-    @solutions = Solution.all
+    @solutions = Solution.order("sn ASC")
     @solution = Solution.first
   end
 
   def show
-  	@solutions = Solution.all
+  	@solutions = Solution.order("sn ASC")
     @solution = Solution.find(params[:id])
   end
 end
