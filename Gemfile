@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'sunspot_rails'
+
+gem 'progress_bar'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -17,6 +20,10 @@ gem 'therubyracer'
 gem 'activeadmin'
 
 gem 'sunspot_rails'
+
+group :development do
+   gem 'sunspot_solr'
+ end
 
 
 # Gems used only for assets and not required

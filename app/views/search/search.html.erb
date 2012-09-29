@@ -1,0 +1,23 @@
+<div class="row">
+	<%= render 'layouts/header' %>
+	
+<div class="span9 offset3 results">
+
+
+ <% @search_result.each do |result| %>
+	<div class="result">
+	<h3><%= result.name %></h3>
+	<span><%= sanitize(truncate result.description, :length => 50) %></span>
+	<%= link_to "перейти", url_for(result) %>
+	</div>
+<% end %>
+
+
+
+</div>
+
+
+
+	<%= render 'layouts/footer' %>
+</div>
+

@@ -1,5 +1,7 @@
 Imsat::Application.routes.draw do
 
+  get "search/search"
+
   mount Ckeditor::Engine => '/ckeditor'
 
   ActiveAdmin.routes(self)
@@ -14,6 +16,8 @@ Imsat::Application.routes.draw do
     root to: 'static_pages#home'
     match '/contact',   to: 'static_pages#contact'
     match '/about',   to: 'static_pages#about'
+    match '/search', to: 'search#search'
+    
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

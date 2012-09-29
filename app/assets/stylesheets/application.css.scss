@@ -407,5 +407,16 @@ ul, ol {list-style:none}
 .slider .slider-paging a span {display: none;}
 
 
+/* search results */
+
+.results {
+	border-top: solid 2px grey;
+	padding-top: 30px;
+}
+
+.result {
+	border-bottom: solid 2px grey;
+	padding-top: 15px;
+}
 
 
