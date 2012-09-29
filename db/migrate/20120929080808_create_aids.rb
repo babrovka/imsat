@@ -1,6 +1,6 @@
-class CreateSupports < ActiveRecord::Migration
+class CreateAids < ActiveRecord::Migration
   def change
-    create_table :supports do |t|
+    create_table :aids do |t|
       t.string :name
       t.text :description
 

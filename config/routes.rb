@@ -1,20 +1,13 @@
 Imsat::Application.routes.draw do
 
-
   mount Ckeditor::Engine => '/ckeditor'
 
-  get "products/index"
-
-  get "products/show"
-
   ActiveAdmin.routes(self)
-
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   resources :solutions
   resources :products
-  resources :supports
-
+  resources :aids
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
