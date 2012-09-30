@@ -12,7 +12,10 @@ end
 module Imsat
   class Application < Rails::Application
     
-  config.action_view.sanitized_allowed_tags = 'table', 'tr', 'td'
+  config.action_view.sanitized_allowed_tags = 'table', 'tr', 'td', 'border'
+  
+  config.action_view.sanitized_allowed_attributes = 'id', 'class', 'style', 'border'
+  
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
