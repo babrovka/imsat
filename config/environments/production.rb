@@ -4,7 +4,7 @@ Imsat::Application.configure do
   # Code is not reloaded between requests
   config.cache_classes = true
   
-  config.assets.precompile += Ckeditor.assets
+  config.assets.precompile += ['active_admin.css', 'active_admin.js', 'ckeditor/init.js']
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
