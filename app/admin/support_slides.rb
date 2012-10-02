@@ -1,5 +1,5 @@
 ActiveAdmin.register SupportSlide do
-
+menu :label => "Aid Slides"
   
        index do 
         column :id
