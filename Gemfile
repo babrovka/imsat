@@ -19,9 +19,7 @@ gem 'therubyracer'
 
 gem 'activeadmin'
 
-gem 'sunspot_rails'
-gem 'sunspot_solr'
-
+gem 'thinking-sphinx', '2.0.10'
 
 
 
