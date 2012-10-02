@@ -25,12 +25,15 @@
 			$("#slider ul").carouFredSel({
 	    		circular: true,
 	    		infinite: false,
-	    		auto 	: true,
+	    		auto 	: {
+					pauseDuration:5000
+				},
 	    		scroll  : {
 	        		items   : 1
 	    		},
 	    	
 	    		pagination  : {
+	    	
 	        		container : "#paging"	
 	        	}
 			});
