@@ -13,7 +13,7 @@
 	
 	<div class="span8 maintext">
 		<h3><%= @solution.name %></h3>
-			<p><%= simple_format(@solution.description) %></p>	
+			<p><%= sanitize @solution.description %></p>	
 	</div>
 
 	
