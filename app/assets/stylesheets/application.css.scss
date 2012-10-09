@@ -415,14 +415,38 @@ ul, ol {list-style:none}
 
 /* search results */
 
+.newsearch {
+	margin-top: 40px;
+}
+
+
+
+.newsearchtitle {
+	float: left;
+	padding-top: 5px;
+	
+}
+
+.newsearchfiled {
+	float: left;
+	margin-left: 30px;
+}
+
+
+
 .results {
-	border-top: solid 2px grey;
+	min-height: 500px !important;
 	padding-top: 30px;
 }
 
+.resultstitle {
+	font-size: 30pt;
+}
+
+
 .result {
-	border-bottom: solid 2px grey;
-	padding-top: 15px;
+
+	padding-top: 30px;
 }
 
 

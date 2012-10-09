@@ -1,13 +1,27 @@
 <div class="row">
 	<%= render 'layouts/header' %>
-	
+
+
+<div class="span9 offset3 newsearch">
+	<div class="newsearchtitle">Новый поиск</div>
+	<div class="newsearchfiled"><%= form_tag search_path, :method => :get do %>
+		 <%= text_field_tag :search, params[:search] %>
+		 <%= submit_tag "Найти", :name => nil, class: "btn" %>
+		 <% end %>
+		</div>
+</div>
+
+
+
 <div class="span9 offset3 results">
+	
+<span class="resultstitle">Результаты поиска</span>
 
 
 <% for search in @search %>
 	<div class="result">
 	<h3><%= search.name %></h3>
-	<span><%= sanitize(truncate search.description, :length => 50) %></span>
+	<span><%= sanitize(truncate search.description, :length => 200) %></span>
 	<%= link_to "перейти", url_for(search) %>
 	</div>
 <% end %>
