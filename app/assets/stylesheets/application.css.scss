@@ -447,6 +447,16 @@ ul, ol {list-style:none}
 .result {
 
 	padding-top: 30px;
+	
+	a {
+		color: #3bbae2;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
 }
 
 
