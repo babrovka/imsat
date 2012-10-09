@@ -4,7 +4,7 @@
 <div class="span9 offset3 results">
 
 
- <%= @search.each do |search| %>
+<% for search in @search %>
 	<div class="result">
 	<h3><%= search.name %></h3>
 	<span><%= sanitize(truncate search.description, :length => 50) %></span>
