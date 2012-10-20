@@ -1,8 +1,9 @@
-<div class="row">
+
 	<%= render 'layouts/header' %>
 
 
 <div class="span9 offset3 newsearch">
+<div class="row">
 	<div class="newsearchtitle">Новый поиск</div>
 	<div class="newsearchfiled"><%= form_tag search_path, :method => :get do %>
 		 <%= text_field_tag :search, params[:search] %>
@@ -10,11 +11,11 @@
 		 <% end %>
 		</div>
 </div>
-
+</div>
 
 
 <div class="span9 offset3 results">
-	
+<div class="row">
 <span class="resultstitle">Результаты поиска</span>
 
 
