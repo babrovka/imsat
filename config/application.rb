@@ -12,7 +12,7 @@ end
 module Imsat
   class Application < Rails::Application
     
-  config.action_view.sanitized_allowed_tags = 'table', 'tr', 'td', 'border'
+  config.action_view.sanitized_allowed_tags = 'table', 'tr', 'th', 'td', 'border'
   
   config.action_view.sanitized_allowed_attributes = 'id', 'class', 'style', 'border'
   
