@@ -1,6 +1,8 @@
 ActiveAdmin.register Slide do
+  config.sort_order = 'sn_asc'
   
      index do 
+      column :sn
       column :id
       column :title
       column :note
@@ -12,6 +14,7 @@ ActiveAdmin.register Slide do
 
     form :html => { :enctype => "multipart/form-data" } do |f|
       f.inputs "Details" do
+      f.input :sn
       f.input :title
       f.input :note
       f.input :link, :label => "start with 'http://'"
@@ -22,6 +25,7 @@ ActiveAdmin.register Slide do
 
     show do
           attributes_table do
+            row :sn
             row :title
             row :note
             row :link

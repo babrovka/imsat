@@ -1,5 +1,5 @@
 class SupportSlide < ActiveRecord::Base
-    attr_accessible :title, :logo, :note, :link
+    attr_accessible :title, :logo, :note, :link, :sn
 
     has_attached_file :logo, :styles => { :medium => "940x339>" }
 

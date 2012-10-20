@@ -1,7 +1,7 @@
 <div class="span12">
 <div id="slider" class="slider">
 	<ul>
-		<% SolutionSlide.all.each do |slide| %>
+		<% SolutionSlide.order("sn ASC").each do |slide| %>
 		<li>
 			<%= image_tag(slide.logo, :size => "940x339") %>
 			

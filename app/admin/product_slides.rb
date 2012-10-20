@@ -1,5 +1,8 @@
 ActiveAdmin.register ProductSlide do
+  config.sort_order = 'sn_asc'
+  
          index do 
+          column :sn
           column :id
           column :title
           column :note
@@ -11,6 +14,7 @@ ActiveAdmin.register ProductSlide do
 
         form :html => { :enctype => "multipart/form-data" } do |f|
           f.inputs "Details" do
+          f.input :sn
           f.input :title
           f.input :note
           f.input :link, :label => "start with 'http://'"
@@ -21,6 +25,7 @@ ActiveAdmin.register ProductSlide do
 
         show do
               attributes_table do
+                row :sn
                 row :title
                 row :note
                 row :link

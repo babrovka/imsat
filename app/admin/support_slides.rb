@@ -1,7 +1,9 @@
 ActiveAdmin.register SupportSlide do
+  config.sort_order = 'sn_asc'
 menu :label => "Aid Slides"
   
        index do 
+        column :sn
         column :id
         column :title
         column :note
@@ -13,6 +15,7 @@ menu :label => "Aid Slides"
 
       form :html => { :enctype => "multipart/form-data" } do |f|
         f.inputs "Details" do
+        f.input :sn
         f.input :title
         f.input :note
         f.input :link, :label => "start with 'http://'"
@@ -23,6 +26,7 @@ menu :label => "Aid Slides"
 
       show do
             attributes_table do
+              row :sn
               row :title
               row :note
               row :link
