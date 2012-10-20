@@ -3,7 +3,6 @@
 
 
 <div class="span9 offset3">
-<div class="row">
 	<div class="newsearchtitle">Новый поиск</div>
 	<div class="newsearchfiled"><%= form_tag search_path, :method => :get do %>
 		 <%= text_field_tag :search, params[:search] %>
@@ -11,13 +10,11 @@
 		 <% end %>
 		</div>
 </div>
-</div>
+
 
 
 <div class="span9 offset3">
-<div class="row">
 <span class="resultstitle">Результаты поиска</span>
-
 <% for search in @results %>
 	<div class="result">
 	<h3><%= search.name %></h3>
@@ -25,12 +22,10 @@
 	<%= link_to "перейти", url_for(search) %>
 	</div>
 <% end %>
-
-</div>
 </div>
 
+</div>
 
-
-	<%= render 'layouts/footer' %></div>
+	<%= render 'layouts/footer' %>
 
 
