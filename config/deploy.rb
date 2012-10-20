@@ -116,6 +116,7 @@ end
 
 before 'deploy:update_code', 'thinking_sphinx:stop'
 after 'deploy:update_code', 'thinking_sphinx:start'
+after 'deploy:update_code', 'thinking_sphinx:rebuild'
 
 namespace :sphinx do
   desc "Symlink Sphinx indexes"
