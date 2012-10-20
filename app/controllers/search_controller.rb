@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def search
-  @search = ThinkingSphinx.search(params[:search])
+  @results = ThinkingSphinx.search(params[:search])
 end
 end
