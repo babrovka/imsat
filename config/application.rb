@@ -15,7 +15,7 @@ module Imsat
   config.action_view.sanitized_allowed_tags = 'table', 'tbody', 'tr', 'th', 'td', 'border'
   
   config.action_view.sanitized_allowed_attributes = 'id', 'class', 
-  'style', 'border', 'cellpadding', 'cellspacing'
+  'style', 'border', 'td', 'colspan', 'rowspan'
   
   
 
