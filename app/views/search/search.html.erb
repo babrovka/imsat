@@ -19,7 +19,7 @@
 <% for search in @results %>
 	<div class="result">
 	<h3><%= search.name %></h3>
-	<div><%= sanitize(truncate search.description, :length => 200) %></div>
+	<div><%= truncate search.description, :length => 150 %></div>
 	<%= link_to "перейти", url_for(search) %>
 	</div>
 <% end %>
