@@ -8,7 +8,7 @@
 			<div class="s-text">
 				<span class="st-title"><%= slide.title %></span>
 				<p><%= slide.note %></p>
-				<a href="<%= slide.link %>">далее...</a>
+				<%= link_to "далее...", slide.link %>
 			</div>
 		</li>
 		<% end %>

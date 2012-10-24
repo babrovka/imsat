@@ -21,7 +21,6 @@ Imsat::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  Sunspot.config.solr.url = 'http://localhost:8983/solr'
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
