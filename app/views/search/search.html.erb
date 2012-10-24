@@ -17,13 +17,13 @@
 
 <span class="resultstitle">Результаты поиска</span>
 <% for search in @results %>
-	<div class="result">
+	
 	<h3><%= search.name %></h3>
-	<span><%= sanitize(truncate search.description, :length => 200) %></span>
+	<div><%= sanitize(truncate search.description, :length => 200) %></div>
 	<%= link_to "перейти", url_for(search) %>
 	</div>
 <% end %>
-</div>
+
 <%= will_paginate @results, :page_links => false %>
 </div>
 
