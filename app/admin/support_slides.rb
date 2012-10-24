@@ -18,7 +18,7 @@ menu :label => "Aid Slides"
         f.input :sn
         f.input :title
         f.input :note
-        f.input :link, :label => "start with 'http://'"
+        f.input :link
         f.input :logo, :as => :file, :label => "940x339px picture"
       end
       f.buttons
