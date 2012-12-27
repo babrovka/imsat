@@ -38,10 +38,25 @@ table, th, td, tr {
 
 
 
-
+.zero {
+	float: left;
+}
 
 .zerob2b {
+	float: left;
 	margin-left: 40px;
+	
+	color: #a9bacc;
+	
+	a {
+		color: #a9bacc !important;
+		text-decoration: underline;
+	}
+	
+	a:hover {
+		color: black !important;
+	}
+	
 }
 
 
