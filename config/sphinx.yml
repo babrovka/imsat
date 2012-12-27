@@ -3,4 +3,4 @@ development:
 test:
   port: 9313
 production:
-  port: 2391
+  port: 2392

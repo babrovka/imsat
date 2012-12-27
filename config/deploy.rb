@@ -46,7 +46,7 @@ ssh_options[:forward_agent] = true
 set :application,     "imsat"
 
 # Сервер размещения проекта.
-set :deploy_server,   "neon.locum.ru"
+set :deploy_server,   "fluorine.locum.ru"
 
 
 # Не включать в поставку разработческие инструменты и пакеты тестирования.
