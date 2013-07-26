@@ -1,6 +1,6 @@
 require 'rvm/capistrano'
 require 'bundler/capistrano'
-
+require 'thinking_sphinx/deploy/capistrano'
 load 'deploy/assets'
 
 server "5.178.80.26", :web, :app, :db, primary: true
@@ -31,5 +31,8 @@ namespace(:customs) do
    end
 end
 
+before 'deploy:update_code', 'thinking_sphinx:stop'
+after 'deploy:update_code', 'thinking_sphinx:start'
+after 'deploy:update_code', 'thinking_sphinx:rebuild'
 before "deploy:assets:precompile", "copy_database_config"
 after "deploy", "deploy:cleanup"
