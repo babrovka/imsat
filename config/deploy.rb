@@ -24,6 +24,19 @@ task :copy_database_config do
    run "cp #{db_config} #{latest_release}/config/database.yml"
 end
 
+namespace(:thin) do
+  task :stop do
+    run "thin stop -C /etc/thin/imsat.yml"
+   end
+  
+  task :start do
+    run "thin start -C /etc/thin/imsat.yml"
+  end
+
+  task :restart do
+    run "thin restart -C /etc/thin/imsat.yml"
+  end
+end
 
 namespace(:customs) do
   task :restart do

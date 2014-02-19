@@ -20,8 +20,9 @@ test:
 
 production:
   adapter: mysql2
+  host: localhost
   encoding: utf8
-  host: mysql2.locum.ru
   database: babrovka_imsat70
-  username: babrovka_imsat70
-  password: Cr6f2mqQ
+  pool: 5
+  username: root
+  password: ks86ybdl!
