@@ -54,12 +54,6 @@ ActiveRecord::Schema.define(:version => 20121020104158) do
     t.decimal  "sn",          :precision => 2, :scale => 0
   end
 
-  create_table "categories", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
     t.string   "data_content_type"
@@ -92,9 +86,9 @@ ActiveRecord::Schema.define(:version => 20121020104158) do
   create_table "products", :force => true do |t|
     t.string   "name"
     t.text     "description"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
-    t.integer  "sn",          :limit => 2
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
+    t.decimal  "SN",          :precision => 2, :scale => 0
   end
 
   create_table "slides", :force => true do |t|
