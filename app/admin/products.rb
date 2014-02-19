@@ -12,7 +12,7 @@ ActiveAdmin.register Product do
   
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
-    f.input :sn  
+    f.input :SN  
     f.input :name
     f.input :description, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Full' }
   end
