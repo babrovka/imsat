@@ -17,7 +17,7 @@ module Imsat
   config.action_view.sanitized_allowed_attributes = 'id', 'class', 
   'style', 'border', 'td', 'colspan', 'rowspan'
   
-  
+    I18n.config.enforce_available_locales = false
 
   
     # Settings in config/environments/* take precedence over those specified here.

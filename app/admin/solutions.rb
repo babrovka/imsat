@@ -4,6 +4,7 @@ ActiveAdmin.register Solution do
    index do
     column :id
     column :sn
+    column :published
     column :name
     
     default_actions
@@ -13,6 +14,7 @@ ActiveAdmin.register Solution do
     f.inputs "Details" do
     f.input :sn  
     f.input :name
+    f.input :published
     f.input :description, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Full' }
   end
   f.buttons

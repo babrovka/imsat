@@ -1,11 +1,11 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.order("sn ASC")
-    @product = Product.first
+    @products = Product.published.order("sn ASC")
+    @product = Product.published.first
   end
 
   def show
-    @products = Product.order("sn ASC")
+    @products = Product.published.order("sn ASC")
     @product = Product.find(params[:id])
   end
 end

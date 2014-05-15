@@ -11,10 +11,12 @@
 			</ul>		
 	</div>
 	
+	<% if @aid %>
 	<div class="span8 maintext">
 		<h3><%= @aid.name %></h3>
 			<p><%= sanitize @aid.description %></p>	
 	</div>
+	<% end %>
 
 	
 	<%= render 'layouts/footer' %>

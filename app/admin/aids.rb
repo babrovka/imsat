@@ -4,6 +4,7 @@ ActiveAdmin.register Aid do
      index do
       column :id
       column :sn
+      column :published
       column :name
 
       default_actions
@@ -13,7 +14,9 @@ ActiveAdmin.register Aid do
       f.inputs "Details" do
       f.input :sn  
       f.input :name
+      f.input :published
       f.input :description, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Full' }
+      
     end
     f.buttons
    end

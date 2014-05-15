@@ -1,3 +1,3 @@
-Rake::Task['create:products'].invoke
-Rake::Task['create:solutions'].invoke
-Rake::Task['create:aids'].invoke
+Rake::Task['db:products'].invoke
+Rake::Task['db:solutions'].invoke
+Rake::Task['db:aids'].invoke

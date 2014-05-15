@@ -1,11 +1,11 @@
 class AidsController < ApplicationController
   def index
-    @aids = Aid.order("sn ASC")
-    @aid = Aid.first
+    @aids = Aid.published.order("sn ASC")
+    @aid = Aid.published.first
   end
 
   def show
-  	@aids = Aid.order("sn ASC")
+  	@aids = Aid.published.order("sn ASC")
     @aid = Aid.find(params[:id])
   end
 end
