@@ -3,7 +3,7 @@ ActiveAdmin.register Product do
   
    index do
     column :id
-    column :SN
+    column :sn
     column :published
     column :name
 
@@ -13,7 +13,7 @@ ActiveAdmin.register Product do
   
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
-    f.input :SN  
+    f.input :sn  
     f.input :published
     f.input :name
     f.input :description, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Full' }
@@ -23,7 +23,7 @@ ActiveAdmin.register Product do
   
   show do
         attributes_table do
-          row :SN
+          row :sn
           row :name
           row :description do
             sanitize(product.description)
