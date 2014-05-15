@@ -38,6 +38,12 @@ namespace(:thin) do
   end
 end
 
+namespace(:db) do
+  task :publish do
+    run %Q{cd #{latest_release} && bundle exec rake db:publish RAILS_ENV=production}
+  end
+end
+
 namespace(:customs) do
   task :restart do
     run "cd #{current_path}; thin restart"
