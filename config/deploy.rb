@@ -24,6 +24,19 @@ task :copy_database_config do
    run "cp #{db_config} #{latest_release}/config/database.yml"
 end
 
+namespace :deploy do
+  namespace :assets do
+    task :precompile, :roles => :web, :except => { :no_release => true } do
+      from = source.next_revision(current_revision)
+      if capture("cd #{latest_release} && #{source.local.log(from)} vendor/assets/ app/assets/ | wc -l").to_i > 0
+        run %Q{cd #{latest_release} && #{rake} RAILS_ENV=#{rails_env} #{asset_env} assets:precompile}
+      else
+        logger.info "Skipping asset pre-compilation because there were no asset changes"
+      end
+    end
+  end
+end
+
 namespace(:thin) do
   task :stop do
     run "thin stop -C /etc/thin/imsat.yml"
@@ -50,8 +63,6 @@ namespace(:customs) do
    end
 end
 
-before 'deploy:update_code', 'thinking_sphinx:stop'
-after 'deploy:update_code', 'thinking_sphinx:start'
 after 'deploy:update_code', 'thinking_sphinx:rebuild'
 before "deploy:assets:precompile", "copy_database_config"
 after "deploy", "deploy:cleanup"

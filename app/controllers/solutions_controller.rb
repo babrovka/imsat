@@ -7,6 +7,7 @@ class SolutionsController < ApplicationController
   def show
   	@solutions = Solution.published.order("sn ASC")
     @solution = Solution.find(params[:id])
+    redirect_to solutions_path if !@solution.published 
   end
 end
 
