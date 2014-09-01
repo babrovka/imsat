@@ -11,7 +11,6 @@ gem 'unicorn'
 gem 'execjs'
 gem 'therubyracer'
 gem 'activeadmin'
-gem 'thinking-sphinx', '2.0.10'
 gem 'will_paginate'
 gem 'faker'
 gem 'populator'
@@ -28,6 +27,7 @@ gem 'jquery-rails', '~> 2.3.0'
 
 
 group :production do 
-gem 'mysql2'
+  gem 'mysql2'
+  gem 'thinking-sphinx', '~> 3.1.0'
 end
 

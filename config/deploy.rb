@@ -11,6 +11,7 @@
 # Если вы используете другую систему управления зависимостями,
 # закомментируйте эту строку.
 require 'bundler/capistrano'
+require 'thinking_sphinx/capistrano'
 
 ## Чтобы не хранить database.yml в системе контроля версий, поместите
 ## dayabase.yml в shared-каталог проекта на сервере и раскомментируйте
@@ -106,3 +107,7 @@ namespace :deploy do
     run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
 end
+
+before 'deploy:update_code', 'thinking_sphinx:stop'
+after 'deploy:update_code', 'thinking_sphinx:start'
+after 'deploy:update_code', 'thinking_sphinx:rebuild'
