@@ -6,7 +6,7 @@ gem 'sqlite3'
 gem 'paperclip'
 gem "ckeditor"
 gem 'capistrano'
-gem 'rvm-capistrano'
+gem 'rvm-capistrano',  require: false
 gem 'unicorn'
 gem 'execjs'
 gem 'therubyracer'
