@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'PFDinDisplayPro';
-    src: asset-url('PFDinDisplayPro-Reg.ttf', font) format('truetype');
+    src: asset-url('PFDinDisplayPro-Reg.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -339,10 +339,10 @@ table, th, td, tr {
 
 @font-face {
     font-family: 'PfdindisplayproLight';
-    src: asset-url('pfdindisplaypro-light.eot', font);
-    src: asset-url('pfdindisplaypro-light.eot?#iefix', font) format('embedded-opentype'),
-         asset-url('pfdindisplaypro-light.woff', font) format('woff'),
-         asset-url('pfdindisplaypro-light.ttf', font) format('truetype');
+    src: asset-url('pfdindisplaypro-light.eot');
+    src: asset-url('pfdindisplaypro-light.eot?#iefix') format('embedded-opentype'),
+         asset-url('pfdindisplaypro-light.woff') format('woff'),
+         asset-url('pfdindisplaypro-light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -350,10 +350,10 @@ table, th, td, tr {
 
 @font-face {
     font-family: 'PfdindisplayproMed';
-    src: asset-url('pfdindisplaypro-med.eot', font);
-    src: asset-url('pfdindisplaypro-med.eot?#iefix', font) format('embedded-opentype'),
-         asset-url('pfdindisplaypro-med.woff', font) format('woff'),
-         asset-url('pfdindisplaypro-med.ttf', font) format('truetype');
+    src: asset-url('pfdindisplaypro-med.eot');
+    src: asset-url('pfdindisplaypro-med.eot?#iefix') format('embedded-opentype'),
+         asset-url('pfdindisplaypro-med.woff') format('woff'),
+         asset-url('pfdindisplaypro-med.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -361,10 +361,10 @@ table, th, td, tr {
 
 @font-face {
     font-family: 'EtelkaLightProRegular';
-    src: asset-url('etelkalightpro-webfont.eot', font);
-    src: asset-url('etelkalightpro-webfont.eot?#iefix', font) format('embedded-opentype'),
-         asset-url('etelkalightpro-webfont.woff', font) format('woff'),
-         asset-url('etelkalightpro-webfont.ttf', font) format('truetype');
+    src: asset-url('etelkalightpro-webfont.eot');
+    src: asset-url('etelkalightpro-webfont.eot?#iefix') format('embedded-opentype'),
+         asset-url('etelkalightpro-webfont.woff') format('woff'),
+         asset-url('etelkalightpro-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
