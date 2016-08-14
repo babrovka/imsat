@@ -8,12 +8,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
 gem 'progress_bar'
 gem 'sqlite3'
 gem 'paperclip'
 gem "ckeditor"
-gem 'rvm-capistrano',  require: false
 gem 'unicorn'
 gem 'execjs'
 gem 'therubyracer'
@@ -31,10 +29,11 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem "capistrano", "~> 3.6"
+  gem 'capistrano-rvm', github: 'capistrano/rvm'
+	gem 'capistrano-rails'
 end
 
 group :production do 
   gem 'mysql2'
   gem 'thinking-sphinx', '~> 3.2.0'
 end
-

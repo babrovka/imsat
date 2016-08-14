@@ -1,6 +1,6 @@
 # encoding: utf-8
 # config valid only for Capistrano 3
-lock '2.15.9'
+lock '3.6.0'
 
 # Project configuration options
 # ------------------------------
@@ -16,8 +16,7 @@ set :unicorn_pid,    "/var/run/unicorn/#{fetch(:user)}/" \
 set :bundle_without, %w{development test}.join(' ')             # this is default
 set :use_sudo,       false
 
-set :repo_url,       "#{fetch(:user)}@sulfur.locum.ru:" \
-                     "git/#{fetch(:application)}.git"
+set :repo_url, 'git@example.com:db87987/imsat.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
