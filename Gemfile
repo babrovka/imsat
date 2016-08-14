@@ -13,7 +13,6 @@ gem 'progress_bar'
 gem 'sqlite3'
 gem 'paperclip'
 gem "ckeditor"
-gem 'capistrano'
 gem 'rvm-capistrano',  require: false
 gem 'unicorn'
 gem 'execjs'
@@ -31,6 +30,7 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem "capistrano", "~> 3.6"
 end
 
 group :production do 
