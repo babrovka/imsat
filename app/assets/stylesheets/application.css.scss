@@ -76,12 +76,12 @@ table, th, td, tr {
 	display: block;
 	width: 160px;
 	height: 101px;
-	background: url(logo.png) 0% 0% no-repeat;
+	background: image-url("logo.png") 0% 0% no-repeat;
 	text-decoration: none;
 }
 
 .logo a:hover {
-	background: url(logo-hover.png) 0% 0% no-repeat;
+	background: image-url("logo-hover.png") 0% 0% no-repeat;
 }
 
 .top {
@@ -107,17 +107,17 @@ table, th, td, tr {
 	
 	.active {
 			color: white;
-			background: url(hover.png) 0% 50% no-repeat;
+			background: image-url("hover.png") 0% 50% no-repeat;
 	}
 }
 
 .toplink:hover {
 	color: white;
-	background: url(hover.png) 0% 50% no-repeat;
+	background: image-url("hover.png") 0% 50% no-repeat;
 }
 
 .home {
-	background: url(home.png) no-repeat;
+	background: image-url("home.png") no-repeat;
 	height: 339px;
 }
 
@@ -250,17 +250,17 @@ table, th, td, tr {
 }
 
 .blue {
-	background: url(blue.png) no-repeat;
+	background: image-url("blue.png") no-repeat;
 	height: 140px;
 }
 
 .green {
-	background: url(green.png) no-repeat;
+	background: image-url("green.png") no-repeat;
 	height: 140px;
 }
 
 .orange {
-	background: url(orange.png) no-repeat;
+	background: image-url("orange.png") no-repeat;
 	height: 140px;
 }
 
@@ -278,35 +278,35 @@ table, th, td, tr {
 
 .centerlinkbl a {
 			padding-left: 10px;
-			background: url(blue_link.png) no-repeat;	
+			background: image-url("blue_link.png") no-repeat;	
 			
 }
 
 .centerlinkbl a:hover {
 			
-			background: url(blue_link_hover.png) no-repeat;	
+			background: image-url("blue_link_hover.png") no-repeat;	
 			}
 
 .centerlinkgr a {
 
-			background: url(green_link.png) no-repeat;	
+			background: image-url("green_link.png") no-repeat;	
 			
 }
 
 .centerlinkgr a:hover {
 
-			background: url(green_link_hover.png) no-repeat;	
+			background: image-url("green_link_hover.png") no-repeat;	
 			}
 			
 .centerlinkor a {
 
-			background: url(orange_link.png) no-repeat;	
+			background: image-url("orange_link.png") no-repeat;	
 			
 }
 
 .centerlinkor a:hover {
 
-			background: url(orange_link_hover.png) no-repeat;	
+			background: image-url("orange_link_hover.png") no-repeat;	
 			}
 
 
@@ -402,7 +402,7 @@ ul, ol {list-style:none}
 .slider ul li img {display: block;}
 
 .slider ul li .s-text {
-	background: url(black-opacity.png);
+	background: image-url("black-opacity.png");
 	color: #fff;
 	font-size: 16px;
 	height: 339px;
@@ -432,7 +432,7 @@ ul, ol {list-style:none}
 }
 
 .slider .slider-paging a {
-	background: url(slider-paging.png) no-repeat;
+	background: image-url("slider-paging.png") no-repeat;
 	float: left;
 	width: 8px;
 	height: 8px;
