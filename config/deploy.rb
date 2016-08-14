@@ -73,10 +73,7 @@ namespace :deploy do
 
   desc 'Restart Application'
   task :restart do
-    on roles(:app) do
-      execute "[ -f #{fetch(:unicorn_pid)} ] && " \
-              "kill -USR2 `cat #{fetch(:unicorn_pid)}` || " \
-              "#{fetch(:unicorn_start_cmd)}"
-    end
+    invoke 'deploy:stop'
+    invoke 'deploy:start'
   end
 end
