@@ -12,10 +12,10 @@ end
 module Imsat
   class Application < Rails::Application
     
-  config.action_view.sanitized_allowed_tags = 'source', 'img', 'table', 'tbody', 'tr', 'th', 'td', 'border'
+  config.action_view.sanitized_allowed_tags = 'a', 'source', 'img', 'table', 'tbody', 'tr', 'th', 'td', 'border'
   
   config.action_view.sanitized_allowed_attributes = 'id', 'class', 
-  'style', 'border', 'td', 'colspan', 'rowspan', 'src'
+  'style', 'border', 'td', 'colspan', 'rowspan', 'src', 'href'
   
     I18n.config.enforce_available_locales = false
 
