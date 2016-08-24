@@ -13,7 +13,7 @@
 	
 	<div class="span8 maintext">
 		<h3><%= @aid.name %></h3>
-			<p><%= sanitize @aid.description %></p>	
+			<p><%= @aid.description.html_safe %></p>	
 	</div>
 
 	
