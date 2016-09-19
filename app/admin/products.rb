@@ -1,6 +1,6 @@
 ActiveAdmin.register Product do
   config.sort_order = 'sn_asc'
-  permit_params :SN, :published, :name, :description
+  permit_params :sn, :published, :name, :description
 
   index do
     column :id
