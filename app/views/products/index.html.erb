@@ -12,12 +12,8 @@
 	</div>
 	
 	<% if @product %>
-	<div class="span8 maintext">
-		<h3><%= @product.name %></h3>
-			<p><%= sanitize @product.description %></p>	
-	</div>
+		<%= render 'shared/element', element: @product %>
 	<% end %>
-
 	
 	<%= render 'layouts/footer' %>
 </div>

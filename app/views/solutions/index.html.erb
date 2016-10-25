@@ -12,10 +12,7 @@
 	</div>
 	
 	<% if @solution %>
-	<div class="span8 maintext">
-		<h3><%= @solution.name %></h3>
-			<p><%= sanitize @solution.description %></p>	
-	</div>
+		<%= render 'shared/element', element: @solution %>
   <% end %>
 	
 	<%= render 'layouts/footer' %>

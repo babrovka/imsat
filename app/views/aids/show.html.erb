@@ -7,15 +7,10 @@
 			  <% @aids.each do |aid| %>
 			    <li><%= link_to aid.name, aid %></li> 
 			<% end %>
-
 			</ul>		
 	</div>
 	
-	<div class="span8 maintext">
-		<h3><%= @aid.name %></h3>
-			<p><%= @aid.description.html_safe %></p>	
-	</div>
-
+	<%= render 'shared/element', element: @aid %>
 	
 	<%= render 'layouts/footer' %>
 </div>

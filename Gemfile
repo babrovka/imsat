@@ -20,6 +20,7 @@ gem 'will_paginate'
 gem 'faker'
 gem 'populator'
 gem 'devise'
+gem 'thinking-sphinx', '~> 3.2.0'
 
 group :development, :test do
   gem 'byebug'
@@ -35,5 +36,5 @@ end
 
 group :production do 
   gem 'mysql2'
-  gem 'thinking-sphinx', '~> 3.2.0'
+  
 end

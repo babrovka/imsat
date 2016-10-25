@@ -11,11 +11,7 @@
 			</ul>		
 	</div>
 	
-	<div class="span8 maintext">
-		<h3><%= @solution.name %></h3>
-			<p><%= @solution.description.html_safe %></p>	
-	</div>
-
+	<%= render 'shared/element', element: @solution %>
 	
 	<%= render 'layouts/footer' %>
 </div>

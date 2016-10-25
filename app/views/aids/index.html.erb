@@ -12,10 +12,7 @@
 	</div>
 	
 	<% if @aid %>
-	<div class="span8 maintext">
-		<h3><%= @aid.name %></h3>
-			<p><%= sanitize @aid.description %></p>	
-	</div>
+		<%= render 'shared/element', element: @aid %>
 	<% end %>
 
 	
